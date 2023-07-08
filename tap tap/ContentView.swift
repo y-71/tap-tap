@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @GestureState var isLongPress = false
     var body: some View {
+        let longPressGesture = LongPressGesture(minimumDuration: Double.infinity).updating($isLongPress){newValue, state, transaction in state = newValue}
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Circle()
+                .frame(width: 100, height: 100, alignment: .center)
+                .foregroundColor(isLongPress ? .orange: .blue)
+                .scaleEffect(isLongPress ? 2: 1)
+                .gesture(longPressGesture)
+                .animation(.default, value: isLongPress)
+
+                
         }
         .padding()
     }
