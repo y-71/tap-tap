@@ -16,23 +16,11 @@ struct GameOverview: View{
     var body: some View{
         VStack{
             VStack {
-                Spacer()
-                Button("See your ranking") {
-                    showGameCenter = true
-                }
-                Spacer()
-                Button("Go back to home menu") {
-                    matchManager.resetGame()
-                }
-                Spacer()
+                GameCenterView(leaderboardID: "grp.Recuria", matchManager: matchManager)
+                    .ignoresSafeArea()
+                    
             }
-            .sheet(isPresented: $showGameCenter) {
-                GameCenterView(leaderboardID: "grp.Recuria")
-            }
-                
-        }.padding()
-            .onAppear(){
-            }
+        }
     }
 }
 

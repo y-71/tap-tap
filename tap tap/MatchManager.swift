@@ -77,11 +77,11 @@ class MatchManager: NSObject, ObservableObject{
         do {
             let leaderboards = try await GKLeaderboard.loadLeaderboards(IDs: self.leaderboardIDs)
             if let recuriaLeaderboard = leaderboards.first {
-                let (localPlayerEntry, leaderboardEntries, _) = try await recuriaLeaderboard.loadEntries(for: .global, timeScope: .allTime, range: NSRange(location: 1, length: 100))
-                for leaderboardEntry in leaderboardEntries {
-                    let photo: UIImage = try await leaderboardEntry.player.loadPhoto(for: .small)
-                }
-                print(localPlayerEntry?.rank ?? "no localPlayerEntry rank")
+//                let (localPlayerEntry, leaderboardEntries, _) = try await recuriaLeaderboard.loadEntries(for: .global, timeScope: .allTime, range: NSRange(location: 1, length: 100))
+//                for leaderboardEntry in leaderboardEntries {
+//                    let photo: UIImage = try await leaderboardEntry.player.loadPhoto(for: .small)
+//                }
+//                print(localPlayerEntry?.rank ?? "no localPlayerEntry rank")
             }
         } catch {
             print("Error loading leaderboards: \(error.localizedDescription)")
