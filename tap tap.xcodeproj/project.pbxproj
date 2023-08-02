@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB367FCD2A5C7D0B001B86D2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CB367FCC2A5C7D0B001B86D2 /* FirebaseAnalytics */; };
+		CB367FD42A5C8687001B86D2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB367FD32A5C8687001B86D2 /* FirebaseFirestoreSwift */; };
+		CB36801F2A5DB8F3001B86D2 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3680182A5DB8F3001B86D2 /* MatchManager.swift */; };
+		CB3680202A5DB8F3001B86D2 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3680192A5DB8F3001B86D2 /* Misc.swift */; };
+		CB3680212A5DB8F3001B86D2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36801A2A5DB8F3001B86D2 /* GameView.swift */; };
+		CB3680222A5DB8F3001B86D2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36801B2A5DB8F3001B86D2 /* MenuView.swift */; };
+		CB3680232A5DB8F3001B86D2 /* GameOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36801C2A5DB8F3001B86D2 /* GameOverview.swift */; };
+		CB3680242A5DB8F3001B86D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36801D2A5DB8F3001B86D2 /* ContentView.swift */; };
+		CB4214292A64325B0044D377 /* EllapsedTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4214282A64325B0044D377 /* EllapsedTime.swift */; };
+		CB5716E32A7A5B9400C0A211 /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5716E22A7A5B9400C0A211 /* GameCenterView.swift */; };
 		CB7933DB2A59B081004B7B39 /* tap_tapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7933DA2A59B081004B7B39 /* tap_tapApp.swift */; };
-		CB7933DD2A59B081004B7B39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7933DC2A59B081004B7B39 /* ContentView.swift */; };
 		CB7933DF2A59B083004B7B39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7933DE2A59B083004B7B39 /* Assets.xcassets */; };
 		CB7933E32A59B083004B7B39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7933E22A59B083004B7B39 /* Preview Assets.xcassets */; };
 		CB7933ED2A59B083004B7B39 /* tap_tapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7933EC2A59B083004B7B39 /* tap_tapTests.swift */; };
@@ -34,9 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB3680182A5DB8F3001B86D2 /* MatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
+		CB3680192A5DB8F3001B86D2 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		CB36801A2A5DB8F3001B86D2 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		CB36801B2A5DB8F3001B86D2 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CB36801C2A5DB8F3001B86D2 /* GameOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverview.swift; sourceTree = "<group>"; };
+		CB36801D2A5DB8F3001B86D2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../poc/poc/ContentView.swift; sourceTree = "<group>"; };
+		CB4214282A64325B0044D377 /* EllapsedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllapsedTime.swift; sourceTree = "<group>"; };
+		CB5716E22A7A5B9400C0A211 /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		CB7933D72A59B081004B7B39 /* tap tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tap tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7933DA2A59B081004B7B39 /* tap_tapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tap_tapApp.swift; sourceTree = "<group>"; };
-		CB7933DC2A59B081004B7B39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB7933DE2A59B083004B7B39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB7933E02A59B083004B7B39 /* tap_tap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tap_tap.entitlements; sourceTree = "<group>"; };
 		CB7933E22A59B083004B7B39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB367FCD2A5C7D0B001B86D2 /* FirebaseAnalytics in Frameworks */,
+				CB367FD42A5C8687001B86D2 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +90,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB367FD22A5C8687001B86D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB7933CE2A59B081004B7B39 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +104,7 @@
 				CB7933EB2A59B083004B7B39 /* tap tapTests */,
 				CB7933F52A59B083004B7B39 /* tap tapUITests */,
 				CB7933D82A59B081004B7B39 /* Products */,
+				CB367FD22A5C8687001B86D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,7 +122,14 @@
 			isa = PBXGroup;
 			children = (
 				CB7933DA2A59B081004B7B39 /* tap_tapApp.swift */,
-				CB7933DC2A59B081004B7B39 /* ContentView.swift */,
+				CB36801D2A5DB8F3001B86D2 /* ContentView.swift */,
+				CB36801C2A5DB8F3001B86D2 /* GameOverview.swift */,
+				CB5716E22A7A5B9400C0A211 /* GameCenterView.swift */,
+				CB36801A2A5DB8F3001B86D2 /* GameView.swift */,
+				CB4214282A64325B0044D377 /* EllapsedTime.swift */,
+				CB3680182A5DB8F3001B86D2 /* MatchManager.swift */,
+				CB36801B2A5DB8F3001B86D2 /* MenuView.swift */,
+				CB3680192A5DB8F3001B86D2 /* Misc.swift */,
 				CB7933DE2A59B083004B7B39 /* Assets.xcassets */,
 				CB7933E02A59B083004B7B39 /* tap_tap.entitlements */,
 				CB7933E12A59B083004B7B39 /* Preview Content */,
@@ -145,6 +178,10 @@
 			dependencies = (
 			);
 			name = "tap tap";
+			packageProductDependencies = (
+				CB367FCC2A5C7D0B001B86D2 /* FirebaseAnalytics */,
+				CB367FD32A5C8687001B86D2 /* FirebaseFirestoreSwift */,
+			);
 			productName = "tap tap";
 			productReference = CB7933D72A59B081004B7B39 /* tap tap.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +254,9 @@
 				Base,
 			);
 			mainGroup = CB7933CE2A59B081004B7B39;
+			packageReferences = (
+				CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CB7933D82A59B081004B7B39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7933DD2A59B081004B7B39 /* ContentView.swift in Sources */,
+				CB3680232A5DB8F3001B86D2 /* GameOverview.swift in Sources */,
+				CB3680242A5DB8F3001B86D2 /* ContentView.swift in Sources */,
+				CB3680222A5DB8F3001B86D2 /* MenuView.swift in Sources */,
+				CB5716E32A7A5B9400C0A211 /* GameCenterView.swift in Sources */,
+				CB3680202A5DB8F3001B86D2 /* Misc.swift in Sources */,
+				CB36801F2A5DB8F3001B86D2 /* MatchManager.swift in Sources */,
 				CB7933DB2A59B081004B7B39 /* tap_tapApp.swift in Sources */,
+				CB3680212A5DB8F3001B86D2 /* GameView.swift in Sources */,
+				CB4214292A64325B0044D377 /* EllapsedTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +476,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -467,7 +514,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -612,6 +659,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB367FCC2A5C7D0B001B86D2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CB367FD32A5C8687001B86D2 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB7933CF2A59B081004B7B39 /* Project object */;
 }
