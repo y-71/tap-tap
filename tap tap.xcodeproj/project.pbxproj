@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB367FCD2A5C7D0B001B86D2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CB367FCC2A5C7D0B001B86D2 /* FirebaseAnalytics */; };
-		CB367FD42A5C8687001B86D2 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB367FD32A5C8687001B86D2 /* FirebaseFirestoreSwift */; };
 		CB36801F2A5DB8F3001B86D2 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3680182A5DB8F3001B86D2 /* MatchManager.swift */; };
 		CB3680202A5DB8F3001B86D2 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3680192A5DB8F3001B86D2 /* Misc.swift */; };
 		CB3680212A5DB8F3001B86D2 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB36801A2A5DB8F3001B86D2 /* GameView.swift */; };
@@ -48,7 +46,7 @@
 		CB36801A2A5DB8F3001B86D2 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		CB36801B2A5DB8F3001B86D2 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CB36801C2A5DB8F3001B86D2 /* GameOverview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverview.swift; sourceTree = "<group>"; };
-		CB36801D2A5DB8F3001B86D2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../poc/poc/ContentView.swift; sourceTree = "<group>"; };
+		CB36801D2A5DB8F3001B86D2 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB4214282A64325B0044D377 /* EllapsedTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllapsedTime.swift; sourceTree = "<group>"; };
 		CB5716E22A7A5B9400C0A211 /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		CB7933D72A59B081004B7B39 /* tap tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tap tap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,8 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB367FCD2A5C7D0B001B86D2 /* FirebaseAnalytics in Frameworks */,
-				CB367FD42A5C8687001B86D2 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +117,9 @@
 		CB7933D92A59B081004B7B39 /* tap tap */ = {
 			isa = PBXGroup;
 			children = (
-				CB7933DA2A59B081004B7B39 /* tap_tapApp.swift */,
+				CB7933E02A59B083004B7B39 /* tap_tap.entitlements */,
 				CB36801D2A5DB8F3001B86D2 /* ContentView.swift */,
+				CB7933DA2A59B081004B7B39 /* tap_tapApp.swift */,
 				CB36801C2A5DB8F3001B86D2 /* GameOverview.swift */,
 				CB5716E22A7A5B9400C0A211 /* GameCenterView.swift */,
 				CB36801A2A5DB8F3001B86D2 /* GameView.swift */,
@@ -131,7 +128,6 @@
 				CB36801B2A5DB8F3001B86D2 /* MenuView.swift */,
 				CB3680192A5DB8F3001B86D2 /* Misc.swift */,
 				CB7933DE2A59B083004B7B39 /* Assets.xcassets */,
-				CB7933E02A59B083004B7B39 /* tap_tap.entitlements */,
 				CB7933E12A59B083004B7B39 /* Preview Content */,
 			);
 			path = "tap tap";
@@ -179,8 +175,6 @@
 			);
 			name = "tap tap";
 			packageProductDependencies = (
-				CB367FCC2A5C7D0B001B86D2 /* FirebaseAnalytics */,
-				CB367FD32A5C8687001B86D2 /* FirebaseFirestoreSwift */,
 			);
 			productName = "tap tap";
 			productReference = CB7933D72A59B081004B7B39 /* tap tap.app */;
@@ -255,7 +249,6 @@
 			);
 			mainGroup = CB7933CE2A59B081004B7B39;
 			packageReferences = (
-				CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CB7933D82A59B081004B7B39 /* Products */;
 			projectDirPath = "";
@@ -466,6 +459,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -505,6 +499,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -661,30 +656,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CB367FCC2A5C7D0B001B86D2 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		CB367FD32A5C8687001B86D2 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB367FCB2A5C7D0B001B86D2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB7933CF2A59B081004B7B39 /* Project object */;
 }

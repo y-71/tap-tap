@@ -47,7 +47,7 @@ class MatchManager: NSObject, ObservableObject{
     }
     
     func renderMinutes()->String{
-        return renderInDoubleDigits(number: scoreInCentiseconds/100/60/60)
+        return renderInDoubleDigits(number: scoreInCentiseconds/100/60)
     }
     
     func renderSeconds()->String{
@@ -73,20 +73,20 @@ class MatchManager: NSObject, ObservableObject{
         isGameOver = true
         inGame = false
     }
-    func loadScores() async {
-        do {
-            let leaderboards = try await GKLeaderboard.loadLeaderboards(IDs: self.leaderboardIDs)
-            if let recuriaLeaderboard = leaderboards.first {
+//    func loadScores() async {
+//        do {
+//            let leaderboards = try await GKLeaderboard.loadLeaderboards(IDs: self.leaderboardIDs)
+//            if let recuriaLeaderboard = leaderboards.first {
 //                let (localPlayerEntry, leaderboardEntries, _) = try await recuriaLeaderboard.loadEntries(for: .global, timeScope: .allTime, range: NSRange(location: 1, length: 100))
 //                for leaderboardEntry in leaderboardEntries {
 //                    let photo: UIImage = try await leaderboardEntry.player.loadPhoto(for: .small)
 //                }
 //                print(localPlayerEntry?.rank ?? "no localPlayerEntry rank")
-            }
-        } catch {
-            print("Error loading leaderboards: \(error.localizedDescription)")
-        }
-    }
+//            }
+//        } catch {
+//            print("Error loading leaderboards: \(error.localizedDescription)")
+//        }
+//    }
     func submitScore(){
         isGameOver = true
         
